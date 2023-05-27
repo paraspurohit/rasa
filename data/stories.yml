@@ -1,0 +1,19 @@
+version: "3.1"
+
+stories:
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: action_greet
+
+
+- story: Activate User Form
+  steps:
+  - intent: affirm
+  - action: user_form
+  - active_loop: user_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_thankyou

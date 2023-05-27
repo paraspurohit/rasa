@@ -1,0 +1,10 @@
+# .rasa
+.rasa
+#models
+models
+
+story_graph.dot
+
+tests
+
+venv/
